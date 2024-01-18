@@ -3,7 +3,7 @@ This repository is meant to share the code and a toy dataset to be analyzed.
 
 The current issue are wrong ROC curves produced using 'macro' - average procedure from sklearn.
 
-The code 10_fold_cross_validaiton.py performs a stratified 10 fold CV on an input dataset. Given an imbalanced dataset the code is developed to in such a way to oversample the minority classes found in each fold with two different techniques. In this way, three different training datasets (SMOTE,KDE and baseline) are used for training a classifier. Then, the models are tested on the same validation set. The same procedure is repeated for the other k-1 folds. Predicted probabilities are aggregated for all three models in three final vectors.
+The code 10_fold_cross_validaiton.py performs a stratified 10-fold CV on an input dataset. Given an imbalanced dataset the code is developed to in such a way to oversample the minority classes found in each K fold with two different techniques. In this way, three different training datasets (SMOTE,KDE and baseline) are used for training a classifier. Then, the models are tested on the same validation set. The same procedure is repeated for the other k-1 folds. Predicted probabilities are aggregated for all three models in three final vectors.
 
 As a toy dataset, a modified Iris dataset: 'Iris_imbalanced.csv' is provided as an exmaple. The dataset consist in 3 classes and 4 attributes. Classes are imbalanced by removing some examples as it is shown below:
 Classes:
